@@ -1,0 +1,5 @@
+Name: Rex::App::Symfony2
+Description: Module to deploy Symfony2 applications
+Author: Alexander Kluth <contact@alexanderkluth.com>
+License: MIT
+
