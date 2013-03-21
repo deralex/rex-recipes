@@ -41,9 +41,11 @@ our %vhost_path = (
 );
 
 task "setup", sub {
+   my $params = shift;
 
    my $pkg     = $package{get_operating_system()};
    my $service = $service_name{get_operating_system()};
+   $vhost_path{get_operating_system()} = $params{vhost_path} if defined $params{vhost_path};
 
    # install apache package
    update_package_db;
