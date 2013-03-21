@@ -57,6 +57,7 @@ task "config", sub {
     my $app_path = $params->{app_path};
     my $app_name = $params->{app_name};
 
+    my $pubkey = $params->{pubkey} unless (defined $params->{pubkey});
 }
 
 sub connect {
